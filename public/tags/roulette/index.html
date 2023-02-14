@@ -82,6 +82,8 @@
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	
+				    <li><a href="/categories/Blackjack/" class="animsition-link">Blackjack<small>(1)</small></a></li>
+				    
 				    <li><a href="/categories/Bollywood-Grill/" class="animsition-link">Bollywood Grill<small>(2)</small></a></li>
 				    
 				    <li><a href="/categories/Casino/" class="animsition-link">Casino<small>(6)</small></a></li>
@@ -346,6 +348,21 @@ $('#intro').find('img').each(function(){
 
   if (alt){
     $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
+');
   }
 
   $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
